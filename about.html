@@ -20,32 +20,162 @@
     <header>
       <!-- Navigation -->
       <nav class="header">
-        <h1>
-          <a href="/" title="marédesign.com logo">
+        <h1 aria-hidden="true">
+          <a href="/" title="Brand logo" aria-hidden="true">
             <img
               src="http://via.placeholder.com/200x70"
-              alt="Marcel-André
-            Hille logo"
+              alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
             />
           </a>
         </h1>
-        <ul class="navigationContainer">
-          <li>
-            <a href="index.html">Home</a>
+        <ul class="navigationContainer" role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
           </li>
-          <li>
-            <a href="about.html" target="_blank">About</a>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_blank">About</a>
           </li>
-          <li>
-            <a href="#">Work</a>
+          <li role="presentation">
+            <a href="#" role="menuitem" role="menuitem" target="_blank">Work</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_blank">Contact</a>
           </li>
         </ul>
       </nav>
       <!-- Navigation End -->
     </header>
-    <h1>About</h1>
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Page Introduction -->
+      <div class="aboutIntroduction">
+        <h1>About</h1>
+        <p>This page is about me and my passions</p>
+      </div>
+      <!-- Page Introduction End -->
+      <!-- Passions -->
+      <ul class="passions">
+        <li>Frontend development</li>
+        <li>Backend development</li>
+        <li>Test-driven development</li>
+        <li>Surfing</li>
+        <li>Skiing</li>
+        <li>Bouldering</li>
+      </ul>
+      <!-- Passions End -->
+      <!-- Storyline -->
+      <div class="story">
+        <h2>My journey of becoming a web developer</h2>
+        <p>
+          In 2019 I graduated at the SAE Institute Leipzig with a first class
+          BSc.(Hons) in Games Programming, issued by the Middlesex University of
+          London.
+        </p>
+        <p>
+          It is to bear in mind at this point of my story that I had the
+          privilege of being appointed Director of Studies of the Games
+          Programming course at the SAE Institute Leipzig in October 2016
+          followed accordingly of an additional appointment at the SAE Institute
+          Hannover in 2017.
+        </p>
+        <p>
+          It was my commitment to the task at hand and my Mentors great
+          recommendation that led me into a management role, which I had to
+          follow for the next 2 years.
+        </p>
+        <p>
+          During this period I developed a revised course program, which drew
+          the attention of international software companies of the likes of
+          Crytek, Unity and Daedalic.
+        </p>
+        <p>
+          It was probably the moment I sat down with the brilliant minds of
+          Collin Bishop and Brian Dilg, I was inspired to focus more and more on
+          software engineering and especially on design principles as well as
+          clean code that led me to my current software engineering role at eder
+          GmbH where I've taken part in the development of great software
+          solutions for Mars, BMW, Daimler and MAN.
+        </p>
+        <p>
+          Ever since I've realized the tremendous impact of web based software
+          solutions, capable of minimizing OS restrictions and accessibility
+          issues for clients that ignited my passion for web and cloud
+          development.
+        </p>
+      </div>
+      <!-- Storyline End -->
+      <!-- Skill Set -->
+      <table>
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Years of Experience</th>
+            <th>Level of Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              HTML
+            </td>
+            <td>
+              1 week
+            </td>
+            <td>
+              Beginner
+            </td>
+          </tr>
+          <tr>
+            <td>
+              CSS
+            </td>
+            <td>
+              1 week
+            </td>
+            <td>
+              Beginner
+            </td>
+          </tr>
+          <tr>
+            <td>
+              JS
+            </td>
+            <td>
+              1 week
+            </td>
+            <td>
+              Beginner
+            </td>
+          </tr>
+          <tr>
+            <td>
+              C#
+            </td>
+            <td>
+              2 years
+            </td>
+            <td>
+              Advanced
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Unity3D
+            </td>
+            <td>
+              2 years
+            </td>
+            <td>
+              Intermediate
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Skill Set End -->
+    </div>
+    <!-- Main Content End -->
+    <!-- Scripts -->
+    <script src="./js/tota11y.min.js"></script>
+    <!-- Scripts End -->
   </body>
 </html>

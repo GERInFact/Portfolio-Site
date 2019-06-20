@@ -20,47 +20,91 @@
     <header>
       <!-- Navigation -->
       <nav class="header">
-        <h1>
-          <a href="/" title="marédesign.com logo">
+        <h1 aria-hidden="true">
+          <a href="/" title="Brand logo" aria-hidden="true">
             <img
               src="http://via.placeholder.com/200x70"
-              alt="Marcel-André
-            Hille logo"
+              alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
             />
           </a>
         </h1>
-        <ul class="navigationContainer">
-          <li>
-            <a href="index.html">Home</a>
+        <ul class="navigationContainer" role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
           </li>
-          <li>
-            <a href="about.html" target="_blank">About</a>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_blank">About</a>
           </li>
-          <li>
-            <a href="#">Work</a>
+          <li role="presentation">
+            <a href="#" role="menuitem" role="menuitem" target="_blank">Work</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_blank">Contact</a>
           </li>
         </ul>
       </nav>
       <!-- Navigation End -->
     </header>
-    <!-- Contact Information -->
-    <a href="mailto:maredesign.founder@gmail.com">Contact me</a>
-    <div>
-      Marcel-André Hille <br />
-      Johannesstraße 31A <br />
-      70176 Stuttgart <br />
-      Deutschland <br />
-      <br />
-      Mobile <a href="tel:+4915227598436">+49 152 275 984 36</a><br />
-      Skype <a href="skype:marciausgoslar">marciausgoslar</a><br />
-      <a href="mailto:maredesign.founder @gmail.com"
-        >maredesign.founder@gmail.com</a
-      >
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Contact Information -->
+      <a href="mailto:maredesign.founder@gmail.com">Contact me</a>
+      <div>
+        Marcel-André Hille <br />
+        Johannesstraße 31A <br />
+        70176 Stuttgart <br />
+        Deutschland <br />
+        <br />
+        Mobile <a href="tel:+4915227598436">+49 152 275 984 36</a><br />
+        Skype <a href="skype:marciausgoslar">marciausgoslar</a><br />
+        <a href="mailto:maredesign.founder @gmail.com"
+          >maredesign.founder@gmail.com</a
+        >
+      </div>
+      <!-- Contact Information End -->
+      <!-- Contact From -->
+      <form action="" method="Post" id="contactForm">
+        <!-- Contact Email -->
+        <label class="standardLabel" for="contactEmail">Email: </label>
+        <input
+          id="contactEmail"
+          type="email"
+          placeholder="your@email.address"
+          required
+        />
+        <!-- Contact Email End -->
+        <!-- Contact Subject -->
+        <label class="standardLabel" for="contactSubject">Subject: </label>
+        <input id="contactSubject" type="text" required />
+        <!-- Contact Subject End -->
+        <!-- Contact Mobile Number -->
+        <label class="standardLabel" for="contactMobile">Mobile: </label>
+        <input
+          id="contactMobile"
+          type="tel"
+          placeholder="e.g. +49 152 0815 1337"
+        />
+        <!-- Contact Mobile Number End -->
+        <!-- Contact Message -->
+        <label class="standardLabel" for="contactMessage">Message: </label>
+        <textarea
+          name="contactMessage"
+          id="contactMessage"
+          cols="20"
+          rows="10"
+          maxlength="300"
+          required
+        ></textarea>
+        <!-- Contact Message End -->
+        <!-- Contact Submission -->
+        <button type="submit">Contact</button>
+        <!-- Contact Submission End -->
+      </form>
+      <!-- Contact Form End -->
     </div>
-    <!-- Contact Information End -->
-    <h1>Contact</h1>
+    <!-- Main Content End -->
+    <!-- Scripts -->
+    <script src="./js/tota11y.min.js"></script>
+    <!-- Scripts End -->
   </body>
 </html>

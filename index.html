@@ -20,27 +20,26 @@
     <header>
       <!-- Navigation -->
       <nav class="header">
-        <h1>
-          <a href="/" title="marédesign.com logo">
+        <h1 aria-hidden="true">
+          <a href="/" title="Brand logo" aria-hidden="true">
             <img
               src="http://via.placeholder.com/200x70"
-              alt="Marcel-André
-            Hille logo"
+              alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
             />
           </a>
         </h1>
-        <ul class="navigationContainer">
-          <li>
-            <a href="index.html">Home</a>
+        <ul class="navigationContainer" role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
           </li>
-          <li>
-            <a href="about.html" target="_blank">About</a>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_blank" >About</a>
           </li>
-          <li>
-            <a href="#">Work</a>
+          <li role="presentation">
+            <a href="#" role="menuitem"role="menuitem" target="_blank" >Work</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_blank" >Contact</a>
           </li>
         </ul>
       </nav>
@@ -51,7 +50,7 @@
       <!-- User Introduction -->
       <div class="introduction">
         <div class="profilePictureContainer">
-          <img src="http://via.placeholder.com/150x150" alt="Profile Picture" />
+          <img src="http://via.placeholder.com/150x150" alt="My profile picture" />
         </div>
         <div class="introText">
           <h2>Hello World!</h2>
@@ -69,7 +68,7 @@
     <!-- Main Content End -->
     <!-- Footer Social Media -->
     <footer class="socialMedia">
-      <h5>Find me on</h5>
+      <h4>Find me on</h4>
       <div class="socialMediaIcons">
         <!-- Github -->
         <img src="./img/gitHub.svg" alt="Github" />
@@ -80,5 +79,8 @@
       </div>
     </footer>
     <!-- Footer Social Media End -->
+    <!-- Scripts -->
+    <script src="./js/tota11y.min.js"></script>
+    <!-- Scripts End -->
   </body>
 </html>
