@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="This is a protfolio page of the web developer Marcel-André Hille, representing his work experience"
+      content="This is a portfolio page of the web developer Marcel-André Hille, representing his work experience"
     />
     <meta
       name="keywords"
@@ -14,45 +14,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="img/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Marcel-André Hille</title>
   </head>
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="header">
+      <nav class="navigation-container">
         <h1 aria-hidden="true">
-          <a href="/" title="Brand logo" aria-hidden="true">
+          <a href="/" title="Brand logo">
             <img
               src="http://via.placeholder.com/200x70"
               alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
             />
           </a>
         </h1>
-        <ul class="navigationContainer" role="menubar">
+        <ul class="navigation-container_navigation-list" role="menubar">
           <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+            <a href="index.html" class="navigation-list_item--active" role="menuitem">Home</a>
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" target="_blank" >About</a>
+            <a href="about.html"  class="navigation-list_item" role="menuitem" target="_blank" >About</a>
           </li>
           <li role="presentation">
-            <a href="#" role="menuitem"role="menuitem" target="_blank" >Work</a>
+            <a href="#" role="menuitem" class="navigation-list_item" role="menuitem" target="_blank" >Work</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" target="_blank" >Contact</a>
+            <a href="contact.html" class="navigation-list_item" role="menuitem" target="_blank" >Contact</a>
           </li>
         </ul>
       </nav>
       <!-- Navigation End -->
     </header>
     <!-- Main Content -->
-    <div class="container">
+    <div class="main-content">
       <!-- User Introduction -->
-      <div class="introduction">
+      <div class="main-content_introduction">
         <div class="profilePictureContainer">
           <img src="http://via.placeholder.com/150x150" alt="My profile picture" />
         </div>
-        <div class="introText">
+        <div class="main-content_introText">
           <h2>Hello World!</h2>
           <h3>My name is Marcel-André Hille</h3>
           <h3>I am a <span>&lt;web&gt;</span> developer from Stuttgart</h3>
@@ -60,27 +64,27 @@
       </div>
       <!-- User Introduction End -->
       <!-- Code References -->
-      <div class="codeReferences">
+      <div class="main-content_codeReferences">
         <a href="#">Check out some of my code</a>
       </div>
       <!-- End Code References -->
     </div>
     <!-- Main Content End -->
     <!-- Footer Social Media -->
-    <footer class="socialMedia">
+    <footer class="social-media">
       <h4>Find me on</h4>
-      <div class="socialMediaIcons">
+      <div class="social-media-list">
         <!-- Github -->
-        <img src="./img/gitHub.svg" alt="Github" />
+        <img src="./img/gitHub.svg" alt="Github" class="social-media-list_item"/>
         <!-- Twitter -->
-        <img src="./img/twitter.svg" alt="Twitter" />
+        <img src="./img/twitter.svg" alt="Twitter" class="social-media-list_item"/>
         <!-- LinkedIn -->
-        <img src="./img/linkedIn.svg" alt="LinkedIn" />
+        <img src="./img/linkedIn.svg" alt="LinkedIn"  class="social-media-list_item"/>
       </div>
     </footer>
     <!-- Footer Social Media End -->
     <!-- Scripts -->
-    <script src="./js/tota11y.min.js"></script>
+    <script src="./js/tota11y.min.js" aria-hidden="true"></script>
     <!-- Scripts End -->
   </body>
 </html>
