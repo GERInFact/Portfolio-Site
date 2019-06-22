@@ -60,6 +60,10 @@ input, label {
     color: inherit;
 }
 
+.intro-text_web-span {
+    background-color: #dbe2ef;
+}
+
 .navigation-list_item--active{
     text-decoration: none;
 }
