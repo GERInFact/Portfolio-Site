@@ -13,43 +13,73 @@
     <meta name="author" content="Marcel-André Hille" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="img/favicon-32x32.png" />
-    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Marcel-André Hille - About</title>
   </head>
   <body>
+    <header class="page-header">
       <!-- Navigation -->
-      <header>
-        <!-- Navigation -->
-        <nav class="navigation-container">
-          <h1 aria-hidden="true">
-            <a href="/" title="Brand logo">
-              <img
-                src="http://via.placeholder.com/200x70"
-                alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
-              />
-            </a>
-          </h1>
-          <ul class="navigation-container_navigation-list" role="menubar">
-            <li role="presentation">
-              <a href="index.html" class="navigation-list_item--active" role="menuitem">Home</a>
-            </li>
-            <li role="presentation">
-              <a href="about.html"  class="navigation-list_item" role="menuitem" target="_blank" >About</a>
-            </li>
-            <li role="presentation">
-              <a href="#" role="menuitem" class="navigation-list_item" role="menuitem" target="_blank" >Work</a>
-            </li>
-            <li role="presentation">
-              <a href="contact.html" class="navigation-list_item" role="menuitem" target="_blank" >Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Navigation End -->
-      </header>
+      <nav class="page-header_navigation-container">
+        <h1 class="navigation-container_item" aria-hidden="true">
+          <a href="index.html" title="Brand logo">
+            <img
+              class="item_maredesign-logo"
+              src="img/maredesign_logo.png"
+              alt="Personal logo of Marcel-André Hille, a text logo in upper case letters that consists of my name"
+            />
+          </a>
+        </h1>
+        <ul
+          class="navigation-container_item navigation-container_navigation-list"
+          role="menubar"
+        >
+          <li role="presentation">
+            <a
+              href="index.html"
+              class="navigation-list_item navigation-list_item--active"
+              role="menuitem"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              class="navigation-list_item"
+              role="menuitem"
+              target="_blank"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list_item"
+              role="menuitem"
+              target="_blank"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              class="navigation-list_item"
+              role="menuitem"
+              target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Navigation End -->
+    </header>
     <!-- Main Content -->
     <div class="main-content">
       <!-- Page Introduction -->
@@ -86,7 +116,7 @@
           Hannover in 2017.
         </p>
         <p>
-          It was my commitment to the task at hand and my Mentors great
+          It was my commitment to the task at hand and my mentors great
           recommendation that led me into a management role, which I had to
           follow for the next 2 years.
         </p>
@@ -194,6 +224,31 @@
       <!-- Skill Set End -->
     </div>
     <!-- Main Content End -->
+    <!-- Footer Social Media -->
+    <footer class="social-media">
+      <h4>Find me on</h4>
+      <div class="social-media-list">
+        <!-- Github -->
+        <img
+          src="./img/gitHub.svg"
+          alt="Github"
+          class="social-media-list_item"
+        />
+        <!-- Twitter -->
+        <img
+          src="./img/twitter.svg"
+          alt="Twitter"
+          class="social-media-list_item"
+        />
+        <!-- LinkedIn -->
+        <img
+          src="./img/linkedIn.svg"
+          alt="LinkedIn"
+          class="social-media-list_item"
+        />
+      </div>
+    </footer>
+    <!-- Footer Social Media End -->
     <!-- Scripts -->
     <script src="./js/tota11y.min.js" aria-hidden="true"></script>
     <!-- Scripts End -->

@@ -1,69 +1,152 @@
-
 /* Colors used
 Background Color (Dirty White): #f9f7f7;
 Text Color (Dark Blue): #112d4e;
-Primary Color (Grayish Blue): #3f72af;
+Primary Color (Royal Suit Blue): #3f72af;
 Secondary Color (Ice Blue): #dbe2ef;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    color: #112d4e;
-    background-color: #f9f7f7;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
+  color: #112d4e;
+  background-color: #f9f7f7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 h3 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 a {
-    color: #3f72af;
+  color: #3f72af;
 }
-a:hover, a:focus {
-    text-decoration: none;
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 a:visited {
-    color: #114482;             
+  color: #114482;
 }
 a:active {
-    color: #8FB3DE;
+  color: #8fb3de;
 }
 button {
-    border: none;
-    color: #dbe2ef;
-    background-color: #3f72af;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #eff5ff;
+  background-color: #3f72af;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
-button:hover, button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-input, label {
-    color: inherit;
+input,
+label {
+  color: inherit;
+}
+
+.page-header_navigation-container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.navigation-container_item {
+  flex: 0 1 200px;
+}
+
+.navigation-container_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.item_maredesign-logo {
+  width: 200px;
+}
+
+.navigation-container_navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.main-content_intro-text {
+  text-align: justify;
 }
 
 .intro-text_web-span {
-    background-color: #dbe2ef;
+  background-color: #dbe2ef;
 }
 
-.navigation-list_item--active{
-    text-decoration: none;
+.navigation-list_item--active {
+  text-decoration: none;
 }
+
+.main-content_introduction {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.introduction_portrait-container {
+  float: left;
+  margin-right: 40px;
+}
+
+.portrait-container_profile-portrait {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.social-media {
+  clear: both;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+/* Grid fallback */
+.grid_item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* Styling CSS grid */
+.work-references_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid_item {
+  padding: 10px;
+  background-color: #fff;
+  width: auto;
+}
+
+.grid_item:last-child {
+  grid-column: 3/3;
+  grid-row: 1/3;
+}
+
+
+
