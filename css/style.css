@@ -123,7 +123,7 @@ label {
 
 .main-content_introduction {
   max-width: 700px;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .introduction_portrait-container {
@@ -212,6 +212,7 @@ label {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
+  animation: code-references-scaling 1.5s 2.5s ease-out;
 }
 /* Footer End */
 
@@ -315,13 +316,26 @@ label {
   }
 }
 /* Portrait Slide End */
+/* Code References */
+@keyframes code-references-scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Code References End */
 /* Intro Slide */
 @keyframes intro-slide {
   from {
-    transform: translate(100px,0px);
+    transform: translate(100px, 0px);
   }
   to {
-    transform: translate(0px,0px)
+    transform: translate(0px, 0px);
   }
 }
 /* Intro Slide End */
