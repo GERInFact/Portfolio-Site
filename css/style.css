@@ -114,6 +114,7 @@ label {
 /* Home Page */
 .main-content_intro-text {
   text-align: justify;
+  animation: intro-slide 1s linear;
 }
 
 .intro-text_web-span {
@@ -133,6 +134,7 @@ label {
 .portrait-container_profile-portrait {
   border-radius: 50%;
   width: 250px;
+  animation: portrait-slide 1s linear;
 }
 /* Home Page End */
 /* Work Page */
@@ -303,6 +305,26 @@ label {
 /* Media Query End */
 
 /* Animations */
+/* Portrait Slide */
+@keyframes portrait-slide {
+  from {
+    transform: translate(-100px, 100px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+/* Portrait Slide End */
+/* Intro Slide */
+@keyframes intro-slide {
+  from {
+    transform: translate(100px,0px);
+  }
+  to {
+    transform: translate(0px,0px)
+  }
+}
+/* Intro Slide End */
 /* SVG Color Change */
 @keyframes color-change {
   0% {
