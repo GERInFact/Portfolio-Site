@@ -5,7 +5,7 @@ Primary Color (Royal Suit Blue): #3f72af;
 Secondary Color (Ice Blue): #dbe2ef;
 */
 
-/* Root Elements */
+/* Root Tags */
 * {
   box-sizing: border-box;
 }
@@ -45,9 +45,10 @@ a:visited {
 a:active {
   color: #8fb3de;
 }
-button {
+button,
+.button {
   border: none;
-  color: #eff5ff;
+  color: #eff5ff !important;
   background-color: #3f72af;
   font-family: inherit;
   font-size: inherit;
@@ -55,9 +56,12 @@ button {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
 }
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -66,12 +70,14 @@ input,
 label {
   color: inherit;
 }
-/* Root Elements End  */
+/* Root Tags End  */
 /* Navigation */
 .page-header_navigation-container {
   display: flex;
+  align-items: center;
   width: 100%;
   padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navigation-container_item {
@@ -98,9 +104,18 @@ label {
 /* Navigation End */
 /* Main Content */
 .main-content {
+  margin-top: 50px;
   padding: 0 20px;
 }
 
+/* About page */
+.main-content-about {
+  text-align: center;
+}
+.main-content_download-cv {
+  margin: 20px 0;
+}
+/* About page End */
 .main-content_intro-text {
   text-align: justify;
 }
@@ -157,3 +172,42 @@ label {
   text-align: center;
 }
 /* Footer End */
+
+/* Media Query */
+/* Max width 500px */
+@media all and (max-width: 500px) {
+  /* Work Reference Grid */
+  .work-references_grid {
+    grid-template-columns: 1fr;
+  }
+  /* Work Reference Grid End */
+}
+/* Max width 500px End */
+/* Range 500px - 750px */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  /* Work Reference Grid */
+  .work-references_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Work Reference Grid End */
+}
+/* Range 500px - 750px End */
+/* Range 0px - 750px */
+@media all and (max-width: 750px) {
+  /* Header */
+  h1 {
+    font-size: 22px;
+  }
+  /* Header End */
+  /* Work Reference Grid */
+  .work-references_grid {
+    grid-gap: 10px;
+  }
+  .grid_item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  /* Work Reference Grid End */
+}
+/* Range 0px - 750px End*/
+/* Media Query End */
