@@ -111,7 +111,7 @@ label {
 .main-content-about {
   text-align: center;
 }
-
+/* Home Page */
 .main-content_intro-text {
   text-align: justify;
 }
@@ -134,6 +134,7 @@ label {
   border-radius: 50%;
   width: 250px;
 }
+/* Home Page End */
 /* Work Page */
 /* Work Example Grid */
 /* Grid fallback */
@@ -162,13 +163,17 @@ label {
 /* Work Example End */
 /* Work Page End */
 /* About Page */
+.main-content_about-introduction {
+  margin-bottom: 10px;
+}
 .main-content_download-cv {
-  margin: 30px 0;
+  margin: 30px 0 100px 0;
 }
 .sun {
-  transform-origin: center top; 
+  transform-origin: center top;
   /* duration, name, iteration-count, direction, timing function */
-  animation: color-change 6.25s linear infinite alternate, rotate-sun 20s linear infinite;
+  animation: color-change 6.25s linear infinite alternate,
+    rotate-sun 20s linear infinite;
 }
 .cloud-front {
   animation: cloud-movement 30s linear infinite alternate;
@@ -176,8 +181,26 @@ label {
 .cloud-back {
   animation: cloud-movement-reverse 40s linear infinite alternate;
 }
+.main-content_story {
+  margin-top: 100px;
+  text-align: center;
+}
+.story_text {
+  display: inline-block;
+  width: 50%;
+  text-align: justify;
+}
 .main-content_skills {
   display: inline-block;
+  margin: 100px 0;
+}
+.row_head-item {
+  padding: 10px;
+  color: white;
+  background-color: #3f72af;
+}
+.skill-table_body {
+  background-color: #dbe2ef;
 }
 /* About Page End */
 /* Main Content End */
@@ -193,11 +216,44 @@ label {
 /* Media Query */
 /* Max width 500px */
 @media all and (max-width: 500px) {
+  /* Home Page */
+  .main-content_code-references {
+    margin: 30px 0;
+  }
+  /* Home Page End */
+  /* Work Page */
   /* Work Reference Grid */
   .work-references_grid {
     grid-template-columns: 1fr;
   }
   /* Work Reference Grid End */
+  /* Work Page End */
+  /* About Page */
+  /* CV Download Button */
+  .main-content_download-cv {
+    margin: 30px 0 50px 0;
+  }
+  /* CV Download Button End */
+  /* Berlin SVG */
+  .berlin-illustration {
+    height: 200px;
+    width: 200px;
+  }
+  /* Berlin SVG End */
+  /* Story */
+  .main-content_story {
+    margin-top: 50px;
+  }
+  .story_text {
+    width: 100%;
+  }
+  /* Story End */
+  /* Skills */
+  .main-content_skills {
+    margin: 50px 0;
+  }
+  /* Skills End */
+  /* About Page End */
 }
 /* Max width 500px End */
 /* Range 500px - 750px */
@@ -212,8 +268,17 @@ label {
 /* Range 0px - 750px */
 @media all and (max-width: 750px) {
   /* Header */
+  .page-header_navigation-container {
+    flex-flow: column wrap;
+  }
+  .navigation-container_item {
+    flex-basis: auto;
+  }
   h1 {
     font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
   }
   /* Header End */
   /* Work Reference Grid */
