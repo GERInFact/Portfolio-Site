@@ -250,7 +250,7 @@ label {
   border-radius: 5px;
   background-color: var(--secondary-color);
   overflow: hidden;
-  animation: contact-form-height 0.5s ease-in;
+  animation: contact-form-height 0.5s linear;
 }
 .contact-form-container_contact-form {
   display: flex;
@@ -453,9 +453,11 @@ label {
 /* Contact Form */
 @keyframes contact-form-height {
   from {
+    opacity: 0;
     height: 0;
   }
   to {
+    opacity: 1;
     height: 300px;
   }
 }

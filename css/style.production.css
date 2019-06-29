@@ -274,8 +274,8 @@ label {
   border-radius: 5px;
   background-color: var(--secondary-color);
   overflow: hidden;
-  -webkit-animation: contact-form-height 0.5s ease-in;
-          animation: contact-form-height 0.5s ease-in;
+  -webkit-animation: contact-form-height 0.5s linear;
+          animation: contact-form-height 0.5s linear;
 }
 .contact-form-container_contact-form {
   display: -webkit-box;
@@ -587,17 +587,21 @@ label {
 /* Contact Form */
 @-webkit-keyframes contact-form-height {
   from {
+    opacity: 0;
     height: 0;
   }
   to {
+    opacity: 1;
     height: 300px;
   }
 }
 @keyframes contact-form-height {
   from {
+    opacity: 0;
     height: 0;
   }
   to {
+    opacity: 1;
     height: 300px;
   }
 }
