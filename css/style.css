@@ -33,8 +33,6 @@ Secondary Color (Ice Blue): #dbe2ef;
   --references_grid-grid-template-columns: 1fr 1fr 1fr;
   --references_grid-grid-gap: 20px;
   /* Grids End */
-
- 
 }
 /* Native Variables End */
 
@@ -238,6 +236,32 @@ label {
   background-color: var(--secondary-color);
 }
 /* About Page End */
+/* Contact Page */
+.main-content_contact-information-container {
+  margin: 50px auto;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+}
+.main-content_contact-form-container {
+  margin: 50px auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+.contact-form-container_contact-form {
+  display: flex;
+  flex-flow: column wrap;
+}
+.contact-form_item {
+  border: 0;
+  border-radius: 5px;
+}
+.contact-form_submit {
+  margin: 10px 0;
+}
+/* Contact Page End */
 /* Main Content End */
 /* Footer */
 .social-media {
@@ -334,6 +358,11 @@ label {
     grid-row: auto / auto;
   }
   /* Work Reference Grid End */
+  /* Contact Form */
+  .main-content_contact-form-container {
+    width: 100%;
+  }
+  /* Contact Form End */
 }
 /* Range 0px - 750px End*/
 /* Media Query End */
