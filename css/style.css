@@ -249,6 +249,8 @@ label {
   width: 300px;
   border-radius: 5px;
   background-color: var(--secondary-color);
+  overflow: hidden;
+  animation: contact-form-height 0.5s ease-in;
 }
 .contact-form-container_contact-form {
   display: flex;
@@ -448,4 +450,14 @@ label {
   }
 }
 /* SVG Cloud Movement Reverse End */
+/* Contact Form */
+@keyframes contact-form-height {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px;
+  }
+}
+/* Contact Form End */
 /* Animations End */
