@@ -335,6 +335,16 @@ label {
   /* Work Reference Grid End */
 }
 /* Range 500px - 750px End */
+/* Range 750px - 900px */
+@media all and (min-width: 750px) and (max-width: 900px) {
+  /* Berlin SVG */
+  .berlin-illustration {
+    height: 500px;
+    width: 500px;
+  }
+  /* Berlin SVG End */
+}
+/* Range 750px - 900px End */
 /* Range 0px - 750px */
 @media all and (max-width: 750px) {
   /* Header */
@@ -360,6 +370,12 @@ label {
     grid-row: auto / auto;
   }
   /* Work Reference Grid End */
+  /* Berlin SVG */
+  .berlin-illustration {
+    height: 300px;
+    width: 300px;
+  }
+  /* Berlin SVG End */
   /* Contact Form */
   .main-content_contact-form-container {
     width: 100%;
