@@ -268,7 +268,7 @@ label {
 /* Footer */
 .social-media {
   clear: both;
-  display: flex;
+  display: flex !important;
   flex-flow: column wrap;
   text-align: center;
   animation: code-references-scaling 1.5s 3.5s ease-out;

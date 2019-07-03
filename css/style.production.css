@@ -7,7 +7,7 @@ Secondary Color (Ice Blue): #dbe2ef;
 /* Root Tags */
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -92,8 +92,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -101,14 +101,14 @@ label {
 
 .navigation-container_item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .navigation-container_item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -138,7 +138,7 @@ label {
 .main-content_intro-text {
   text-align: justify;
   -webkit-animation: intro-slide 1s linear;
-  animation: intro-slide 1s linear;
+          animation: intro-slide 1s linear;
 }
 
 .intro-text_web-span {
@@ -159,7 +159,7 @@ label {
   border-radius: 50%;
   width: 250px;
   -webkit-animation: portrait-slide 1s linear;
-  animation: portrait-slide 1s linear;
+          animation: portrait-slide 1s linear;
 }
 /* Home Page End */
 /* Work Page */
@@ -203,21 +203,21 @@ label {
 }
 .sun {
   -webkit-transform-origin: center top;
-  -ms-transform-origin: center top;
-  transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
   /* duration, name, iteration-count, direction, timing function */
   -webkit-animation: color-change 6.25s linear infinite alternate,
     rotate-sun 20s linear infinite;
-  animation: color-change 6.25s linear infinite alternate,
+          animation: color-change 6.25s linear infinite alternate,
     rotate-sun 20s linear infinite;
 }
 .cloud-front {
   -webkit-animation: cloud-movement 30s linear infinite alternate;
-  animation: cloud-movement 30s linear infinite alternate;
+          animation: cloud-movement 30s linear infinite alternate;
 }
 .cloud-back {
   -webkit-animation: cloud-movement-reverse 40s linear infinite alternate;
-  animation: cloud-movement-reverse 40s linear infinite alternate;
+          animation: cloud-movement-reverse 40s linear infinite alternate;
 }
 .main-content_story {
   margin-top: 100px;
@@ -256,7 +256,7 @@ label {
   background-color: #dbe2ef;
   overflow: hidden;
   -webkit-animation: contact-form-height 0.5s linear;
-  animation: contact-form-height 0.5s linear;
+          animation: contact-form-height 0.5s linear;
 }
 .contact-form-container_contact-form {
   display: -webkit-box;
@@ -264,8 +264,8 @@ label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 .contact-form_item {
   border: 0;
@@ -279,16 +279,16 @@ label {
 /* Footer */
 .social-media {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   text-align: center;
   -webkit-animation: code-references-scaling 1.5s 3.5s ease-out;
-  animation: code-references-scaling 1.5s 3.5s ease-out;
+          animation: code-references-scaling 1.5s 3.5s ease-out;
 }
 /* Footer End */
 
@@ -370,12 +370,12 @@ label {
   .page-header_navigation-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
   .navigation-container_item {
     -ms-flex-preferred-size: auto;
-    flex-basis: auto;
+        flex-basis: auto;
   }
   h1 {
     font-size: 22px;
@@ -414,24 +414,24 @@ label {
   from {
     opacity: 0;
     -webkit-transform: translate(-100px, 100px);
-    transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 }
 @keyframes portrait-slide {
   from {
     opacity: 0;
     -webkit-transform: translate(-100px, 100px);
-    transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 }
 /* Portrait Slide End */
@@ -439,29 +439,29 @@ label {
 @-webkit-keyframes code-references-scaling {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   50% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes code-references-scaling {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   50% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 /* Code References End */
@@ -470,24 +470,24 @@ label {
   from {
     opacity: 0;
     -webkit-transform: translate(100px, 0px);
-    transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 }
 @keyframes intro-slide {
   from {
     opacity: 0;
     -webkit-transform: translate(100px, 0px);
-    transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 }
 /* Intro Slide End */
@@ -519,21 +519,21 @@ label {
 @-webkit-keyframes rotate-sun {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes rotate-sun {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* SVG Rotation Sun END */
@@ -541,21 +541,21 @@ label {
 @-webkit-keyframes cloud-movement {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 @keyframes cloud-movement {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 /* SVG Cloud Movement End */
@@ -563,21 +563,21 @@ label {
 @-webkit-keyframes cloud-movement-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 @keyframes cloud-movement-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 /* SVG Cloud Movement Reverse End */
