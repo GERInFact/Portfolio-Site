@@ -4,6 +4,23 @@ Text Color (Dark Blue): #112d4e;
 Primary Color (Royal Suit Blue): #3f72af;
 Secondary Color (Ice Blue): #dbe2ef;
 */
+/* Native Variables */
+:root {
+  /* Root Colors */
+  /* Root Colors End */
+  /* Button Colors */
+  /* Button Colors End */
+  /* Sun Colors */
+  /* Sun Colors End */
+  /* Borders */
+  /* Borders End */
+  /* Font Weights */
+  /* Font Weights End */
+  /* Grids */
+  /* Grids End */
+}
+/* Native Variables End */
+
 /* Root Tags */
 * {
   -webkit-box-sizing: border-box;
@@ -273,6 +290,9 @@ label {
 }
 .contact-form_submit {
   margin: 10px 0;
+}
+#contactMessage {
+  resize: none;
 }
 /* Contact Page End */
 /* Main Content End */

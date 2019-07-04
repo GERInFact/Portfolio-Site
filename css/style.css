@@ -263,6 +263,9 @@ label {
 .contact-form_submit {
   margin: 10px 0;
 }
+#contactMessage {
+  resize: none;
+}
 /* Contact Page End */
 /* Main Content End */
 /* Footer */
