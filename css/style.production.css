@@ -259,7 +259,8 @@ label {
   -webkit-animation: contact-form-height 0.5s linear;
           animation: contact-form-height 0.5s linear;
 }
-.contact-form-container_contact-form {
+.contact-form-container_contact-form,
+.contact-form_email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,6 +268,10 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+.email_error-message {
+  font-size: 12px;
+  color: orange;
 }
 .contact-form_item {
   border: 0;
