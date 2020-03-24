@@ -1,4 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /* Colors used
 Background Color (Dirty White): #f9f7f7;
@@ -74,12 +74,10 @@ button {
   text-decoration: none;
   padding: 10px;
   -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
           border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
-  -moz-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 .button {
@@ -91,12 +89,10 @@ button {
   text-decoration: none;
   padding: 10px;
   -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
           border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
-  -moz-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 button:hover,
@@ -116,12 +112,10 @@ label {
 .page-header_navigation-container {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-     -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
@@ -132,7 +126,6 @@ label {
 .navigation-container_item {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 200px;
-     -moz-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
 }
@@ -140,7 +133,6 @@ label {
 .navigation-container_item:last-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-     -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: right;
@@ -172,7 +164,6 @@ label {
 .main-content_intro-text {
   text-align: justify;
   -webkit-animation: intro-slide 1s linear;
-     -moz-animation: intro-slide 1s linear;
        -o-animation: intro-slide 1s linear;
           animation: intro-slide 1s linear;
 }
@@ -193,11 +184,9 @@ label {
 
 .portrait-container_profile-portrait {
   -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
           border-radius: 50%;
   width: 250px;
   -webkit-animation: portrait-slide 1s linear;
-     -moz-animation: portrait-slide 1s linear;
        -o-animation: portrait-slide 1s linear;
           animation: portrait-slide 1s linear;
 }
@@ -229,8 +218,8 @@ label {
   -ms-grid-column: 3;
   grid-column: 3/3;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1/4;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
 }
 
 .grid_item iframe {
@@ -247,14 +236,11 @@ label {
 }
 .sun {
   -webkit-transform-origin: center top;
-     -moz-transform-origin: center top;
       -ms-transform-origin: center top;
        -o-transform-origin: center top;
           transform-origin: center top;
   /* duration, name, iteration-count, direction, timing function */
   -webkit-animation: color-change 6.25s linear infinite alternate,
-    rotate-sun 20s linear infinite;
-     -moz-animation: color-change 6.25s linear infinite alternate,
     rotate-sun 20s linear infinite;
        -o-animation: color-change 6.25s linear infinite alternate,
     rotate-sun 20s linear infinite;
@@ -263,13 +249,11 @@ label {
 }
 .cloud-front {
   -webkit-animation: cloud-movement 30s linear infinite alternate;
-     -moz-animation: cloud-movement 30s linear infinite alternate;
        -o-animation: cloud-movement 30s linear infinite alternate;
           animation: cloud-movement 30s linear infinite alternate;
 }
 .cloud-back {
   -webkit-animation: cloud-movement-reverse 40s linear infinite alternate;
-     -moz-animation: cloud-movement-reverse 40s linear infinite alternate;
        -o-animation: cloud-movement-reverse 40s linear infinite alternate;
           animation: cloud-movement-reverse 40s linear infinite alternate;
 }
@@ -307,12 +291,10 @@ label {
   padding: 10px;
   width: 300px;
   -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
           border-radius: 5px;
   background-color: #dbe2ef;
   overflow: hidden;
   -webkit-animation: contact-form-height 0.5s linear;
-     -moz-animation: contact-form-height 0.5s linear;
        -o-animation: contact-form-height 0.5s linear;
           animation: contact-form-height 0.5s linear;
 }
@@ -320,14 +302,11 @@ label {
 .contact-form_email {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column wrap;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
@@ -338,7 +317,6 @@ label {
 .contact-form_item {
   border: 0;
   -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
           border-radius: 5px;
 }
 .contact-form_submit {
@@ -354,19 +332,15 @@ label {
   clear: both;
   display: -webkit-box !important;
   display: -webkit-flex !important;
-  display: -moz-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column wrap;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   text-align: center;
   -webkit-animation: code-references-scaling 1.5s 3.5s ease-out;
-     -moz-animation: code-references-scaling 1.5s 3.5s ease-out;
        -o-animation: code-references-scaling 1.5s 3.5s ease-out;
           animation: code-references-scaling 1.5s 3.5s ease-out;
 }
@@ -451,8 +425,6 @@ label {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-flow: column wrap;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
@@ -506,18 +478,6 @@ label {
             transform: translate(0px, 0px);
   }
 }
-@-moz-keyframes portrait-slide {
-  from {
-    opacity: 0;
-    -moz-transform: translate(-100px, 100px);
-         transform: translate(-100px, 100px);
-  }
-  to {
-    opacity: 1;
-    -moz-transform: translate(0px, 0px);
-         transform: translate(0px, 0px);
-  }
-}
 @-o-keyframes portrait-slide {
   from {
     opacity: 0;
@@ -534,14 +494,12 @@ label {
   from {
     opacity: 0;
     -webkit-transform: translate(-100px, 100px);
-       -moz-transform: translate(-100px, 100px);
          -o-transform: translate(-100px, 100px);
             transform: translate(-100px, 100px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-       -moz-transform: translate(0px, 0px);
          -o-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
@@ -562,20 +520,6 @@ label {
             transform: scale(1);
   }
 }
-@-moz-keyframes code-references-scaling {
-  0% {
-    -moz-transform: scale(1);
-         transform: scale(1);
-  }
-  50% {
-    -moz-transform: scale(1.1);
-         transform: scale(1.1);
-  }
-  100% {
-    -moz-transform: scale(1);
-         transform: scale(1);
-  }
-}
 @-o-keyframes code-references-scaling {
   0% {
     -o-transform: scale(1);
@@ -593,19 +537,16 @@ label {
 @keyframes code-references-scaling {
   0% {
     -webkit-transform: scale(1);
-       -moz-transform: scale(1);
          -o-transform: scale(1);
             transform: scale(1);
   }
   50% {
     -webkit-transform: scale(1.1);
-       -moz-transform: scale(1.1);
          -o-transform: scale(1.1);
             transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
-       -moz-transform: scale(1);
          -o-transform: scale(1);
             transform: scale(1);
   }
@@ -624,18 +565,6 @@ label {
             transform: translate(0px, 0px);
   }
 }
-@-moz-keyframes intro-slide {
-  from {
-    opacity: 0;
-    -moz-transform: translate(100px, 0px);
-         transform: translate(100px, 0px);
-  }
-  to {
-    opacity: 1;
-    -moz-transform: translate(0px, 0px);
-         transform: translate(0px, 0px);
-  }
-}
 @-o-keyframes intro-slide {
   from {
     opacity: 0;
@@ -652,14 +581,12 @@ label {
   from {
     opacity: 0;
     -webkit-transform: translate(100px, 0px);
-       -moz-transform: translate(100px, 0px);
          -o-transform: translate(100px, 0px);
             transform: translate(100px, 0px);
   }
   to {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
-       -moz-transform: translate(0px, 0px);
          -o-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
@@ -667,17 +594,6 @@ label {
 /* Intro Slide End */
 /* SVG Color Change */
 @-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-@-moz-keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -722,16 +638,6 @@ label {
             transform: rotate(360deg);
   }
 }
-@-moz-keyframes rotate-sun {
-  from {
-    -moz-transform: rotate(0deg);
-         transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(360deg);
-         transform: rotate(360deg);
-  }
-}
 @-o-keyframes rotate-sun {
   from {
     -o-transform: rotate(0deg);
@@ -745,13 +651,11 @@ label {
 @keyframes rotate-sun {
   from {
     -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
          -o-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-       -moz-transform: rotate(360deg);
          -o-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -768,16 +672,6 @@ label {
             transform: translate(200px, 50px);
   }
 }
-@-moz-keyframes cloud-movement {
-  from {
-    -moz-transform: translate(0, 50px);
-         transform: translate(0, 50px);
-  }
-  to {
-    -moz-transform: translate(200px, 50px);
-         transform: translate(200px, 50px);
-  }
-}
 @-o-keyframes cloud-movement {
   from {
     -o-transform: translate(0, 50px);
@@ -791,13 +685,11 @@ label {
 @keyframes cloud-movement {
   from {
     -webkit-transform: translate(0, 50px);
-       -moz-transform: translate(0, 50px);
          -o-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-       -moz-transform: translate(200px, 50px);
          -o-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
   }
@@ -814,16 +706,6 @@ label {
             transform: translate(100px, 48px);
   }
 }
-@-moz-keyframes cloud-movement-reverse {
-  from {
-    -moz-transform: translate(446px, 48px);
-         transform: translate(446px, 48px);
-  }
-  to {
-    -moz-transform: translate(100px, 48px);
-         transform: translate(100px, 48px);
-  }
-}
 @-o-keyframes cloud-movement-reverse {
   from {
     -o-transform: translate(446px, 48px);
@@ -837,13 +719,11 @@ label {
 @keyframes cloud-movement-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-       -moz-transform: translate(446px, 48px);
          -o-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-       -moz-transform: translate(100px, 48px);
          -o-transform: translate(100px, 48px);
             transform: translate(100px, 48px);
   }
@@ -851,16 +731,6 @@ label {
 /* SVG Cloud Movement Reverse End */
 /* Contact Form */
 @-webkit-keyframes contact-form-height {
-  from {
-    opacity: 0;
-    height: 0;
-  }
-  to {
-    opacity: 1;
-    height: 400px;
-  }
-}
-@-moz-keyframes contact-form-height {
   from {
     opacity: 0;
     height: 0;
