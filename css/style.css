@@ -7,15 +7,15 @@ Secondary Color (Ice Blue): #dbe2ef;
 /* Native Variables */
 :root {
   /* Root Colors */
-  --background-color: #f9f7f7;
-  --primary-text-color: #112d4e;
+  --background-color: #000;
+  --primary-text-color: #fff;
   /* Root Colors End */
   /* Button Colors */
-  --primary-color: #3f72af;
-  --primary-color-visited: #114482;
-  --primary-color-active: #8fb3de;
-  --secondary-color: #dbe2ef;
-  --button-text-color: #eff5ff;
+  --primary-color: #e6007e;
+  --primary-color-visited: #e6007e;
+  --primary-color-active: #fff;
+  --secondary-color: #000;
+  --button-text-color: #000;
   /* Button Colors End */
   /* Sun Colors */
   --rising-sun-color: #edc655;
@@ -23,7 +23,7 @@ Secondary Color (Ice Blue): #dbe2ef;
   --dawn-sun-color: #f76414;
   /* Sun Colors End */
   /* Borders */
-  --navigation-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  --navigation-border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   --button-border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   /* Borders End */
   /* Font Weights */
@@ -165,6 +165,7 @@ label {
 .portrait-container_profile-portrait {
   border-radius: 50%;
   width: 250px;
+  box-shadow: 0px 0px 26px 5px;
   animation: portrait-slide 1s linear;
 }
 /* Home Page End */
@@ -185,8 +186,16 @@ label {
 
 .grid_item {
   padding: 10px;
-  background-color: #fff;
+  background-color: #f4f5f8;
   width: auto;
+}
+
+.grid_item h2 {
+  color: var(--primary-color);
+}
+
+.grid_item p {
+  color: var(--secondary-color);
 }
 
 .grid_item:last-child {
@@ -237,7 +246,10 @@ label {
   background-color: var(--primary-color);
 }
 .skill-table_body {
-  background-color: var(--secondary-color);
+  background-color: #f4f5f8;
+}
+.skill-table_body td {
+  color: var(--secondary-color);
 }
 /* About Page End */
 /* Contact Page */
@@ -252,7 +264,7 @@ label {
   padding: 10px;
   width: 300px;
   border-radius: 5px;
-  background-color: var(--secondary-color);
+  background-color: #f4f5f8;
   overflow: hidden;
   animation: contact-form-height 0.5s linear;
 }
@@ -261,9 +273,12 @@ label {
   display: flex;
   flex-flow: column wrap;
 }
+.contact-form-container_contact-form label {
+  color: var(--secondary-color);
+}
 .email_error-message {
   font-size: 12px;
-  color: orange;
+  color: var(--primary-color);
 }
 .contact-form_item {
   border: 0;

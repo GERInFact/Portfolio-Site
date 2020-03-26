@@ -31,8 +31,8 @@ Secondary Color (Ice Blue): #dbe2ef;
 }
 
 body {
-  color: #112d4e;
-  background-color: #f9f7f7;
+  color: #fff;
+  background-color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -53,22 +53,22 @@ h3 {
   font-weight: 700;
 }
 a {
-  color: #3f72af;
+  color: #e6007e;
 }
 a:hover,
 a:focus {
   text-decoration: none;
 }
 a:visited {
-  color: #114482;
+  color: #e6007e;
 }
 a:active {
-  color: #8fb3de;
+  color: #fff;
 }
 button {
   border: none;
-  color: #eff5ff !important;
-  background-color: #3f72af;
+  color: #000 !important;
+  background-color: #e6007e;
   font-family: inherit;
   font-size: inherit;
   text-decoration: none;
@@ -82,8 +82,8 @@ button {
 }
 .button {
   border: none;
-  color: #eff5ff !important;
-  background-color: #3f72af;
+  color: #000 !important;
+  background-color: #e6007e;
   font-family: inherit;
   font-size: inherit;
   text-decoration: none;
@@ -120,7 +120,7 @@ label {
           align-items: center;
   width: 100%;
   padding: 10px 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navigation-container_item {
@@ -169,7 +169,7 @@ label {
 }
 
 .intro-text_web-span {
-  background-color: #dbe2ef;
+  background-color: #000;
 }
 
 .main-content_introduction {
@@ -186,6 +186,8 @@ label {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   width: 250px;
+  -webkit-box-shadow: 0px 0px 26px 5px;
+          box-shadow: 0px 0px 26px 5px;
   -webkit-animation: portrait-slide 1s linear;
        -o-animation: portrait-slide 1s linear;
           animation: portrait-slide 1s linear;
@@ -210,8 +212,16 @@ label {
 
 .grid_item {
   padding: 10px;
-  background-color: #fff;
+  background-color: #f4f5f8;
   width: auto;
+}
+
+.grid_item h2 {
+  color: #e6007e;
+}
+
+.grid_item p {
+  color: #000;
 }
 
 .grid_item:last-child {
@@ -273,10 +283,13 @@ label {
 .row_head-item {
   padding: 10px;
   color: white;
-  background-color: #3f72af;
+  background-color: #e6007e;
 }
 .skill-table_body {
-  background-color: #dbe2ef;
+  background-color: #f4f5f8;
+}
+.skill-table_body td {
+  color: #000;
 }
 /* About Page End */
 /* Contact Page */
@@ -292,7 +305,7 @@ label {
   width: 300px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  background-color: #dbe2ef;
+  background-color: #f4f5f8;
   overflow: hidden;
   -webkit-animation: contact-form-height 0.5s linear;
        -o-animation: contact-form-height 0.5s linear;
@@ -310,9 +323,12 @@ label {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
+.contact-form-container_contact-form label {
+  color: #000;
+}
 .email_error-message {
   font-size: 12px;
-  color: orange;
+  color: #e6007e;
 }
 .contact-form_item {
   border: 0;
