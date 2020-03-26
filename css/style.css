@@ -300,7 +300,7 @@ label {
   text-align: center;
   animation: code-references-scaling 1.5s 3.5s ease-out;
 }
-social-media-list_item {
+.social-media-list_item {
   background-color: #fff;
 }
 /* Footer End */
