@@ -120,6 +120,10 @@ label {
   text-align: right;
 }
 
+.navigation-container_item a {
+  text-decoration: none;
+}
+
 .item_maredesign-logo {
   width: 200px;
 }
@@ -146,6 +150,9 @@ label {
 .main-content_intro-text {
   text-align: justify;
   animation: intro-slide 1s linear;
+}
+.main-content_intro-text h3 {
+  color: #e6007e;
 }
 
 .intro-text_web-span {
@@ -205,6 +212,7 @@ label {
 
 .grid_item iframe {
   width: 100%;
+  height: 500px;
 }
 /* Work Example End */
 /* Work Page End */
